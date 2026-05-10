@@ -35,7 +35,7 @@ export default function App() {
         </div>
 
         <p className="text-center text-slate-300 text-xs mt-6">
-          Built with React · Recharts · Tailwind CSS · Lucide Icons — AI Ideas Hub © 2026
+          AI Ideas Hub © 2026
         </p>
       </main>
     </div>
