@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+
+  body {
+    background-color: #EEF2FF;
+    color: #0F172A;
+    font-family: "Poppins", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #F1F5F9;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #CBD5E1;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #94A3B8;
+  }
+}
+
+@layer utilities {
+
+
+  h2 {
+    font-family: "Poppins", sans-serif;
+  }
+
+  .gradient-text {
+    background: linear-gradient(90deg, #0284C7, #6366F1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .card {
+    background: #FFFFFF;
+    border: none;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0px 2px 20px rgb(0 0 0 / 1%);
+  }
+.w-10 {
+    width: 4rem;
+}
+.h-10 {
+    height: 4rem;
+}
+.text-\[10px\] {
+    font-size: 12px;
+}
+.py-2\.5 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.px-3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+  .bg-surface-page {
+    --tw-bg-opacity: 1;
+    background-color: rgb(242 245 255);
+  }
+  .text-slate-300 {
+    --tw-text-opacity: 1;
+    color: rgb(31 31 31);
+}
+.text-slate-400 {
+    --tw-text-opacity: 1;
+    color: rgb(31 31 31);
+}
+  .max-w-7xl {
+    max-width: 90rem;
+  }
+
+  .card-hover {
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+
+  .card-hover:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transform: translateY(-1px);
+  }
+
+  .bar-gradient {
+    background: linear-gradient(180deg, #0284C7 0%, #6366F1 100%);
+  }
+}
